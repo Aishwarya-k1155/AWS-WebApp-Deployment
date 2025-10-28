@@ -55,7 +55,6 @@ sudo systemctl restart apache2
 Copied the Public IPv4 address of the instance and opened it in the browser:
 http://<public-ip>
 
-php-template
 The page loaded successfully with the message:
 “Hello Cloud! This is my first web app hosted on the cloud.”
 
