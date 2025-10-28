@@ -36,31 +36,26 @@ Used EC2 Instance Connect (browser terminal) to connect to the running instance.
 
 ### Step 4: Install Apache web server
 sudo apt update
-sudo apt install apache2 -y
-sudo systemctl start apache2
-sudo systemctl enable apache2
 
-php
-Copy code
+sudo apt install apache2 -y
+
+sudo systemctl start apache2
+
+sudo systemctl enable apache2
 
 ### Step 5: Deploy the web application
 Opened the default web directory and replaced the HTML file:
 sudo nano /var/www/html/index.html
 
-css
-Copy code
+
 Pasted my HTML code, saved the file, and restarted Apache:
 sudo systemctl restart apache2
-
-r
-Copy code
 
 ### Step 6: Access the web application
 Copied the Public IPv4 address of the instance and opened it in the browser:
 http://<public-ip>
 
 php-template
-Copy code
 The page loaded successfully with the message:
 “Hello Cloud! This is my first web app hosted on the cloud.”
 
